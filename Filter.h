@@ -22,7 +22,7 @@
 #define FILTER_SAVE_SAVE				1
 
 /* Struct */
-// 形式フィルタ
+// 蠖｢蠑上ヵ繧｣繝ｫ繧ｿ
 typedef struct _FILTER_INFO {
 	TCHAR *format_name;
 

@@ -37,7 +37,7 @@
 #define OPTION_EXE						TEXT("CLCLSet.exe")
 #define HOOK_LIB						TEXT("CLCLHook.dll")
 
-#define HKEY_ID							0x0300			// ホットキーID
+#define HKEY_ID							0x0300			// 繝帙ャ繝医く繝ｼID
 
 // general
 #define WM_GET_VERSION					(WM_APP + 100)

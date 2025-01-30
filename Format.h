@@ -17,13 +17,13 @@
 /* Define */
 
 /* Struct */
-// 形式名情報
+// 蠖｢蠑丞錐諠�蝣ｱ
 typedef struct _FORMAT_NAME {
 	TCHAR *format_name;
 	int format_name_hash;
 } FORMAT_NAME;
 
-// 形式情報
+// 蠖｢蠑乗ュ蝣ｱ
 typedef struct _FORMAT_INFO {
 	TCHAR *format_name;
 
@@ -66,9 +66,9 @@ typedef struct _FORMAT_INFO {
 	FARPROC func_window_hide_data;
 } FORMAT_INFO;
 
-// 形式取得情報
+// 蠖｢蠑丞叙蠕玲ュ蝣ｱ
 typedef struct _FORMAT_GET_INFO {
-	DWORD struct_size;					// 構造体のサイズ
+	DWORD struct_size;					// 讒矩菴薙�ｮ繧ｵ繧､繧ｺ
 
 	TCHAR format_name[BUF_SIZE];
 	TCHAR func_header[BUF_SIZE];

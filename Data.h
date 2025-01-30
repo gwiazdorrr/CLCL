@@ -21,43 +21,43 @@
 #define TYPE_ROOT						3
 
 /* Struct */
-// ƒAƒCƒeƒ€î•ñ
+// ã‚¢ã‚¤ãƒ†ãƒ æƒ…å ±
 typedef struct _DATA_INFO {
-	DWORD struct_size;					// \‘¢‘Ì‚ÌƒTƒCƒY
+	DWORD struct_size;					// æ§‹é€ ä½“ã®ã‚µã‚¤ã‚º
 
 	int type;							// TYPE_
-	TCHAR *title;						// ƒ^ƒCƒgƒ‹
+	TCHAR *title;						// ã‚¿ã‚¤ãƒˆãƒ«
 
-	TCHAR *format_name;					// Œ`Ž®–¼
-	int format_name_hash;				// Œ`Ž®–¼‚ÌƒnƒbƒVƒ…
-	UINT format;						// Œ`Ž®’l
+	TCHAR *format_name;					// å½¢å¼å
+	int format_name_hash;				// å½¢å¼åã®ãƒãƒƒã‚·ãƒ¥
+	UINT format;						// å½¢å¼å€¤
 
-	HANDLE data;						// ƒf[ƒ^
-	DWORD size;							// ƒTƒCƒY
+	HANDLE data;						// ãƒ‡ãƒ¼ã‚¿
+	DWORD size;							// ã‚µã‚¤ã‚º
 
-	FILETIME modified;					// XV“úŽž
-	TCHAR *window_name;					// ƒRƒs[‚µ‚½ƒEƒBƒ“ƒhƒEƒ^ƒCƒgƒ‹
+	FILETIME modified;					// æ›´æ–°æ—¥æ™‚
+	TCHAR *window_name;					// ã‚³ãƒ”ãƒ¼ã—ãŸã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚¿ã‚¤ãƒˆãƒ«
 
-	TCHAR *plugin_string;				// ƒvƒ‰ƒOƒCƒ“—pƒf[ƒ^
+	TCHAR *plugin_string;				// ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ç”¨ãƒ‡ãƒ¼ã‚¿
 	LPARAM plugin_param;
 
-// ˆÈ‰º•Û‘¶‚µ‚È‚¢î•ñ
-	TCHAR *menu_title;					// ƒƒjƒ…[‚É•\Ž¦‚·‚éƒ^ƒCƒgƒ‹ (–¢Ý’è‚Ìê‡‚ÍŒ`Ž®‚ð•\Ž¦)
-	BOOL free_title;					// ƒ^ƒCƒgƒ‹‚ð TRUE-‰ð•ú‚·‚é FALSE-‰ð•ú‚µ‚È‚¢
-	HICON menu_icon;					// ƒƒjƒ…[‚É•\Ž¦‚·‚éƒAƒCƒRƒ“ƒnƒ“ƒhƒ‹
-	BOOL free_icon;						// ƒAƒCƒRƒ“ƒnƒ“ƒhƒ‹‚ð TRUE-‰ð•ú‚·‚é FALSE-‰ð•ú‚µ‚È‚¢
-	HBITMAP menu_bitmap;				// ƒƒjƒ…[‚É•\Ž¦‚·‚éƒrƒbƒgƒ}ƒbƒv
-	BOOL free_bitmap;					// ƒrƒbƒgƒ}ƒbƒvƒnƒ“ƒhƒ‹‚ð TRUE-‰ð•ú‚·‚é FALSE-‰ð•ú‚µ‚È‚¢
-	int menu_bmp_width;					// ƒƒjƒ…[‚É•\Ž¦‚·‚éƒrƒbƒgƒ}ƒbƒv‚ÌŒÂ•ÊƒTƒCƒY
+// ä»¥ä¸‹ä¿å­˜ã—ãªã„æƒ…å ±
+	TCHAR *menu_title;					// ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã«è¡¨ç¤ºã™ã‚‹ã‚¿ã‚¤ãƒˆãƒ« (æœªè¨­å®šã®å ´åˆã¯å½¢å¼ã‚’è¡¨ç¤º)
+	BOOL free_title;					// ã‚¿ã‚¤ãƒˆãƒ«ã‚’ TRUE-è§£æ”¾ã™ã‚‹ FALSE-è§£æ”¾ã—ãªã„
+	HICON menu_icon;					// ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã«è¡¨ç¤ºã™ã‚‹ã‚¢ã‚¤ã‚³ãƒ³ãƒãƒ³ãƒ‰ãƒ«
+	BOOL free_icon;						// ã‚¢ã‚¤ã‚³ãƒ³ãƒãƒ³ãƒ‰ãƒ«ã‚’ TRUE-è§£æ”¾ã™ã‚‹ FALSE-è§£æ”¾ã—ãªã„
+	HBITMAP menu_bitmap;				// ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã«è¡¨ç¤ºã™ã‚‹ãƒ“ãƒƒãƒˆãƒžãƒƒãƒ—
+	BOOL free_bitmap;					// ãƒ“ãƒƒãƒˆãƒžãƒƒãƒ—ãƒãƒ³ãƒ‰ãƒ«ã‚’ TRUE-è§£æ”¾ã™ã‚‹ FALSE-è§£æ”¾ã—ãªã„
+	int menu_bmp_width;					// ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã«è¡¨ç¤ºã™ã‚‹ãƒ“ãƒƒãƒˆãƒžãƒƒãƒ—ã®å€‹åˆ¥ã‚µã‚¤ã‚º
 	int menu_bmp_height;
-	LPARAM param1;						// ƒvƒ‰ƒOƒCƒ“—pƒf[ƒ^
+	LPARAM param1;						// ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ç”¨ãƒ‡ãƒ¼ã‚¿
 	LPARAM param2;
 
 	struct _DATA_INFO *child;
 	struct _DATA_INFO *next;
 
 // Ver 1.0.5
-	int hkey_id;						// ƒzƒbƒgƒL[
+	int hkey_id;						// ãƒ›ãƒƒãƒˆã‚­ãƒ¼
 	UINT op_modifiers;
 	UINT op_virtkey;
 	int op_paste;

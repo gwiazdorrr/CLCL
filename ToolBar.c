@@ -41,13 +41,13 @@ static TBBUTTON tbb[] = {
 // extern
 extern HINSTANCE hInst;
 
-// ƒIƒvƒVƒ‡ƒ“
+// ã‚ªãƒ—ã‚·ãƒ§ãƒ³
 extern OPTION_INFO option;
 
 /* Local Function Prototypes */
 
 /*
- * toolbar_create - StatusBar‚Ìì¬
+ * toolbar_create - StatusBarã®ä½œæˆ
  */
 HWND toolbar_create(const HWND hWnd, const int id)
 {

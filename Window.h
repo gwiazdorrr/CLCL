@@ -16,7 +16,7 @@
 /* Define */
 
 /* Struct */
-// ウィンドウフィルタ
+// 繧ｦ繧｣繝ｳ繝峨え繝輔ぅ繝ｫ繧ｿ
 typedef struct _WINDOW_FILTER_INFO {
 	TCHAR *title;						// Window title
 	TCHAR *class_name;					// Window class name
